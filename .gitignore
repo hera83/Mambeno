@@ -1,0 +1,47 @@
+## Lokale secrets (indeholder rigtige API-keys/passwords, må aldrig committes)
+*/appsettings.Development.json
+.env
+.vs/
+.claude/
+.git/
+.github/
+
+## Build outputs
+*/[Bb]in/
+*/[Oo]bj/
+*/out/
+
+## Visual Studio
+*.user
+*.userosscache
+*.suo
+
+## Rider / VS Code
+.idea/
+.vscode/
+
+## EF Core / SQLite (ekstra sikkerhed udover App_dbs/)
+*.db
+*.db-shm
+*.db-wal
+
+## Logs
+*.log
+
+## OS-specifikke filer
+.DS_Store
+Thumbs.db
+
+## NuGet
+*.nupkg
+**/packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## .NET Core
+*.dll
+*.pdb
+
+## Andre midlertidige filer
+CLAUDE.md

@@ -1,0 +1,9 @@
+using System.Text.Json.Serialization;
+
+namespace api.Services.AiGateway.Dtos.Ollama;
+
+public class ShowModelRequestDto
+{
+    [JsonPropertyName("model")]
+    public string? Model { get; set; }
+}

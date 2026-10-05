@@ -1,0 +1,21 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mambeno-api:latest
+    container_name: mambeno-api
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+    volumes:
+      - app_dbs:/app/app_dbs
+      - app_files:/app/app_files
+
+volumes:
+  app_dbs:
+  app_files:

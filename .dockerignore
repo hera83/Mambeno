@@ -1,0 +1,25 @@
+**/bin/
+**/obj/
+**/.vs/
+**/.vscode/
+**/.idea/
+**/.claude/
+**/.git/
+**/*.user
+
+# Lokale secrets må aldrig ende i imaget
+**/appsettings.Development.json
+.env
+.env.*
+
+# Lokale databaser og filer - containeren har sine egne volumes
+api/app_dbs/
+api/app_files/
+**/*.db
+**/*.db-shm
+**/*.db-wal
+
+Dockerfile
+docker-compose.yml
+.dockerignore
+CLAUDE.md
